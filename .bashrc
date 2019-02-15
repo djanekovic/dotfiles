@@ -126,3 +126,7 @@ fi
 
 setxkbmap hr us
 
+# petsc
+export PETSC_DIR=/home/darko/Desktop/Faks/FEM/petsc
+export PETSC_ARCH=arch-linux2-c-debug
+alias petsc="$PETSC_DIR/$PETSC_ARCH/bin/mpiexec"

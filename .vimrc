@@ -1,5 +1,7 @@
 call plug#begin('~/vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/syntastic'
+Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'justmao945/vim-clang'
 Plug 'vim-airline/vim-airline'
@@ -10,7 +12,7 @@ call plug#end()
 
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 syntax on
 set showmatch
